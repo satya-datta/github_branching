@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  MessageCircle, 
-  Zap, 
-  TrendingUp, 
-  Mic, 
-  Calendar, 
+import {
+  MessageCircle,
+  Zap,
+  TrendingUp,
+  Mic,
+  Calendar,
   Target,
   CheckCircle,
   ArrowRight,
@@ -41,7 +41,7 @@ const Landing = () => {
     link.rel = 'prefetch';
     link.href = '/register';
     document.head.appendChild(link);
-    
+
     return () => {
       document.head.removeChild(link);
     };
@@ -73,7 +73,7 @@ const Landing = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <Navbar />
-      
+
       {/* Structured Data */}
       <script type="application/ld+json">
         {JSON.stringify({
@@ -111,13 +111,13 @@ const Landing = () => {
                 </div>
 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                  Your 10-Minute Daily Practice Partner
+                  Fluent Pulse
                 </h1>
-                
+
                 <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
                   Real conversations. Instant feedback. Visible progress.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6">
                   <PrimaryButton to="/register" size="large" className="inline-flex items-center space-x-2">
                     <span>Start Free Practice Now</span>
@@ -132,12 +132,12 @@ const Landing = () => {
                     <span>See how it works</span>
                   </MutedButton>
                 </div>
-                
+
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   No credit card required. Cancel anytime.
                 </p>
               </div>
-              
+
               {/* Hero Visual */}
               <div className="relative">
                 <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-6 max-w-md mx-auto">
@@ -154,7 +154,7 @@ const Landing = () => {
                         </div>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-start space-x-3 justify-end">
                       <div className="flex-1">
                         <div className="bg-gray-100 dark:bg-gray-700 rounded-2xl p-3 ml-8">
@@ -174,7 +174,7 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Floating elements */}
                 <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-full opacity-20 blur-xl"></div>
                 <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full opacity-20 blur-xl"></div>
@@ -201,12 +201,12 @@ const Landing = () => {
         {/* Value Prop Grid */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeading 
+            <SectionHeading
               title="Why FluentPulse Works"
               subtitle="Five key advantages that make daily practice actually stick"
               className="mb-16"
             />
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <FeatureCard
                 icon={<MessageCircle />}
@@ -215,14 +215,14 @@ const Landing = () => {
                 learnMoreHref="#features"
                 variant="gradient"
               />
-              
+
               <FeatureCard
                 icon={<Zap />}
                 title="Learn faster with instant feedback"
                 description="Get immediate grammar corrections and better phrase suggestions right in the conversation flow."
                 learnMoreHref="#features"
               />
-              
+
               <FeatureCard
                 icon={<TrendingUp />}
                 title="Track your streak, watch your progress"
@@ -230,14 +230,14 @@ const Landing = () => {
                 learnMoreHref="#features"
                 variant="highlight"
               />
-              
+
               <FeatureCard
                 icon={<Mic />}
                 title="Voice and text — practice your way"
                 description="Speak naturally or type your responses. Switch between modes based on your environment and comfort."
                 learnMoreHref="#features"
               />
-              
+
               <FeatureCard
                 icon={<Calendar />}
                 title="Daily reminders that keep you consistent"
@@ -252,12 +252,12 @@ const Landing = () => {
         {/* How It Works */}
         <section id="how-it-works" className="py-20 bg-gray-50 dark:bg-gray-800/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeading 
+            <SectionHeading
               title="How It Works"
               subtitle="Three simple steps to better English, every day"
               className="mb-16"
             />
-            
+
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
                 <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -270,7 +270,7 @@ const Landing = () => {
                   Choose from Fluency, Interview prep, Travel, or Academic English to personalize your practice.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <MessageCircle className="h-8 w-8 text-white" />
@@ -282,7 +282,7 @@ const Landing = () => {
                   Have natural conversations for 5–15 minutes about topics that interest you.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <CheckCircle className="h-8 w-8 text-white" />
@@ -295,7 +295,7 @@ const Landing = () => {
                 </p>
               </div>
             </div>
-            
+
             <div className="text-center">
               <PrimaryButton to="/register" size="large">
                 Start Free Practice Now
@@ -315,7 +315,7 @@ const Landing = () => {
                 This is a preview. The app adapts to your level.
               </p>
             </div>
-            
+
             <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -330,7 +330,7 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4 justify-end">
                   <div className="flex-1">
                     <div className="bg-gray-100 dark:bg-gray-700 rounded-2xl p-4 ml-12">
@@ -348,7 +348,7 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
@@ -369,28 +369,27 @@ const Landing = () => {
         {/* Use Cases */}
         <section className="py-20 bg-gray-50 dark:bg-gray-800/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeading 
+            <SectionHeading
               title="Practice for Your Goals"
               subtitle="Tailored conversations for every learning objective"
               className="mb-16"
             />
-            
+
             <div className="flex flex-wrap justify-center gap-2 mb-12">
               {Object.entries(useCases).map(([key, useCase]) => (
                 <button
                   key={key}
                   onClick={() => setActiveTab(key)}
-                  className={`px-6 py-3 rounded-xl font-medium transition-all ${
-                    activeTab === key
+                  className={`px-6 py-3 rounded-xl font-medium transition-all ${activeTab === key
                       ? 'bg-indigo-600 text-white shadow-lg'
                       : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-indigo-900/20'
-                  }`}
+                    }`}
                 >
                   {useCase.title}
                 </button>
               ))}
             </div>
-            
+
             <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
@@ -412,7 +411,7 @@ const Landing = () => {
                     </ul>
                   </div>
                 </div>
-                
+
                 <div className="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6">
                   <div className="flex items-center mb-4">
                     {activeTab === 'fluency' && <BookOpen className="h-6 w-6 text-indigo-600 mr-2" />}
@@ -445,7 +444,7 @@ const Landing = () => {
                   Reminders are optional. You control notifications.
                 </p>
               </div>
-              
+
               <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl">
                 <div className="text-center mb-6">
                   <div className="inline-flex items-center justify-center w-20 h-20 bg-orange-100 dark:bg-orange-900/30 rounded-full mb-4">
@@ -454,7 +453,7 @@ const Landing = () => {
                   <div className="text-4xl font-bold text-gray-900 dark:text-white">7</div>
                   <div className="text-gray-600 dark:text-gray-400">Day Streak</div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div>
                     <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400 mb-2">
@@ -465,18 +464,17 @@ const Landing = () => {
                       <div className="bg-indigo-600 h-2 rounded-full" style={{ width: '75%' }}></div>
                     </div>
                   </div>
-                  
+
                   <div className="grid grid-cols-7 gap-2">
                     {[...Array(7)].map((_, i) => (
                       <div
                         key={i}
-                        className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-medium ${
-                          i < 5 
-                            ? 'bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300' 
-                            : i === 5 
-                            ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300'
-                            : 'bg-gray-100 dark:bg-gray-700 text-gray-400'
-                        }`}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-medium ${i < 5
+                            ? 'bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300'
+                            : i === 5
+                              ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300'
+                              : 'bg-gray-100 dark:bg-gray-700 text-gray-400'
+                          }`}
                       >
                         {i < 5 ? '✓' : i === 5 ? '•' : ''}
                       </div>
@@ -491,12 +489,12 @@ const Landing = () => {
         {/* Detailed Features */}
         <section id="features" className="py-20 bg-gray-50 dark:bg-gray-800/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeading 
+            <SectionHeading
               title="Everything You Need to Improve"
               subtitle="Comprehensive features designed for real progress"
               className="mb-16"
             />
-            
+
             <div className="grid lg:grid-cols-2 gap-16">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
@@ -525,7 +523,7 @@ const Landing = () => {
                     </div>
                   </li>
                 </ul>
-                
+
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                   Voice or Text Input
                 </h3>
@@ -533,7 +531,7 @@ const Landing = () => {
                   Practice speaking naturally or type your responses. Switch modes anytime based on your environment and comfort level.
                 </p>
               </div>
-              
+
               <div className="space-y-8">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Session Recap</h4>
@@ -562,7 +560,7 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Progress Tracking</h4>
                   <div className="grid grid-cols-3 gap-4 text-center">
@@ -588,12 +586,12 @@ const Landing = () => {
         {/* Comparison */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeading 
+            <SectionHeading
               title="Why Choose FluentPulse?"
               subtitle="See how we compare to other learning methods"
               className="mb-16"
             />
-            
+
             <div className="overflow-x-auto">
               <table className="w-full bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
                 <thead className="bg-gray-50 dark:bg-gray-700">
@@ -644,12 +642,12 @@ const Landing = () => {
         {/* Pricing */}
         <section id="pricing" className="py-20 bg-gray-50 dark:bg-gray-800/50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeading 
+            <SectionHeading
               title="Simple, Transparent Pricing"
               subtitle="Start free, upgrade when you're ready"
               className="mb-16"
             />
-            
+
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl border-2 border-indigo-200 dark:border-indigo-700">
                 <div className="text-center mb-8">
@@ -657,7 +655,7 @@ const Landing = () => {
                   <div className="text-4xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">$0</div>
                   <p className="text-gray-600 dark:text-gray-400">Perfect for getting started</p>
                 </div>
-                
+
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
@@ -676,19 +674,19 @@ const Landing = () => {
                     <span className="text-gray-700 dark:text-gray-300">Voice & text input</span>
                   </li>
                 </ul>
-                
+
                 <PrimaryButton to="/register" className="w-full justify-center">
                   Start Free Practice Now
                 </PrimaryButton>
               </div>
-              
+
               <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl opacity-75">
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Pro</h3>
                   <div className="text-4xl font-bold text-gray-400 mb-2">Coming Soon</div>
                   <p className="text-gray-600 dark:text-gray-400">Advanced features for serious learners</p>
                 </div>
-                
+
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center">
                     <div className="h-5 w-5 bg-gray-300 rounded-full mr-3"></div>
@@ -707,7 +705,7 @@ const Landing = () => {
                     <span className="text-gray-500">Priority support</span>
                   </li>
                 </ul>
-                
+
                 <button className="w-full bg-gray-300 text-gray-500 px-6 py-3 rounded-xl font-semibold cursor-not-allowed">
                   Coming Soon
                 </button>
@@ -719,12 +717,12 @@ const Landing = () => {
         {/* Testimonials */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeading 
+            <SectionHeading
               title="What Learners Say"
               subtitle="Real feedback from our early users"
               className="mb-16"
             />
-            
+
             <div className="grid md:grid-cols-3 gap-8">
               <TestimonialCard
                 quote="FluentPulse helped me feel confident in job interviews. The instant feedback made all the difference."
@@ -732,14 +730,14 @@ const Landing = () => {
                 role="Software Engineer"
                 avatar="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face"
               />
-              
+
               <TestimonialCard
                 quote="I love how it adapts to my schedule. Just 10 minutes a day and I'm already seeing improvement."
                 author="Miguel Rodriguez"
                 role="Graduate Student"
                 avatar="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face"
               />
-              
+
               <TestimonialCard
                 quote="Perfect for travel prep! The conversations feel natural and the feedback is spot-on."
                 author="Emma Thompson"
@@ -753,44 +751,44 @@ const Landing = () => {
         {/* FAQ */}
         <section id="faq" className="py-20 bg-gray-50 dark:bg-gray-800/50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeading 
+            <SectionHeading
               title="Frequently Asked Questions"
               subtitle="Everything you need to know about FluentPulse"
               className="mb-16"
             />
-            
+
             <div className="space-y-4">
               <FAQItem
                 question="How is this different from other language learning apps?"
                 answer="Unlike apps with repetitive exercises, FluentPulse focuses on real conversations with instant feedback. You practice speaking naturally about topics that interest you, not filling in blanks or matching words."
               />
-              
+
               <FAQItem
                 question="Can I practice by speaking out loud?"
                 answer="Absolutely! FluentPulse supports both voice and text input. You can speak naturally and get pronunciation feedback, or type your responses if you're in a quiet environment. Switch between modes anytime."
               />
-              
+
               <FAQItem
                 question="What happens after each practice session?"
                 answer="You'll get a personalized recap showing 3 things you did well and 2 areas for improvement. All corrections and suggestions are saved to your Review Bank for later practice."
               />
-              
+
               <FAQItem
                 question="Is my conversation data private and secure?"
                 answer="Yes, your privacy is our priority. All conversations are encrypted and used only to provide you with personalized feedback. We never share your data with third parties, and you can delete your data anytime."
               />
-              
+
               <FAQItem
                 question="Do I need a credit card to start?"
                 answer="No credit card required! Start practicing immediately with our free plan. You'll get full access to daily conversations, instant feedback, and basic progress tracking."
               />
-              
+
               <FAQItem
                 question="Can I change my daily practice goal?"
                 answer="Yes, you're in complete control. Set your daily goal anywhere from 5 to 30 minutes based on your schedule and learning pace. You can adjust it anytime in your settings."
               />
             </div>
-            
+
             <div className="text-center mt-12">
               <p className="text-gray-600 dark:text-gray-400 mb-4">
                 Have more questions?
@@ -812,17 +810,17 @@ const Landing = () => {
               Join thousands of learners who are improving their English 10 minutes at a time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <PrimaryButton 
-                to="/register" 
-                size="large" 
+              <PrimaryButton
+                to="/register"
+                size="large"
                 className="bg-white text-indigo-600 hover:bg-gray-50 inline-flex items-center space-x-2"
               >
                 <span>Start Free Practice Now</span>
                 <ArrowRight className="h-5 w-5" />
               </PrimaryButton>
-              <MutedButton 
-                href="#features" 
-                size="large" 
+              <MutedButton
+                href="#features"
+                size="large"
                 className="text-indigo-100 hover:text-white hover:bg-white/10"
               >
                 Browse Features
